@@ -1,6 +1,8 @@
 #### 🏦 About the project
 BNBBank is a simplified banking application created for TurnoverBNB`s coding challenge.
 
+![Transactions screen](https://github.com/lftissot/bnb-bank-back/blob/master/docs/print.png)
+
 #### 📝 Key features
 - Two user profiles:
 	 - Customers, that can be freely signup
