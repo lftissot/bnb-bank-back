@@ -1,9 +1,9 @@
-#### 🏦 About the project
+### 🏦 About the project
 BNBBank is a simplified banking application created for TurnoverBNB`s coding challenge.
 
 ![Transactions screen](https://github.com/lftissot/bnb-bank-back/blob/master/docs/print.png)
 
-#### 📝 Key features
+### 📝 Key features
 - Two user profiles:
 	 - Customers, that can be freely signup
 	 - Admins, pre-registered accounts
@@ -17,7 +17,7 @@ BNBBank is a simplified banking application created for TurnoverBNB`s coding cha
 	 - View check details
 	 - Approve or deny checks
 
-#### ⚙️ Stack
+### ⚙️ Stack
 - Laravel 8
 	- spatie/permission
 	- tymon/jwt-auth
@@ -32,7 +32,7 @@ BNBBank is a simplified banking application created for TurnoverBNB`s coding cha
 - Google Compute Engine
 - NGINX
 
-#### 🏁 Running it
+### 🏁 Running it
 ###### Project setup
 ```
 composer install
@@ -56,6 +56,6 @@ php artisan serve
  ./vendor/bin/phpunit
 ```
 
-#### 🔑 Admin account
+### 🔑 Admin account
 - User: admin
 - Password: 1234
