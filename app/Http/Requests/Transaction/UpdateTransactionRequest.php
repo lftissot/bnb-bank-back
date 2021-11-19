@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests\Transaction;
 
+use App\Enums\TransactionStatus;
 use Illuminate\Foundation\Http\FormRequest;
 
 class UpdateTransactionRequest extends FormRequest
@@ -23,8 +24,13 @@ class UpdateTransactionRequest extends FormRequest
      */
     public function rules()
     {
+        $transaction = $this->transaction;
         return [
-            'status'=>'required|in:1,2'
+            'status'=>['required','in:1,2', function ($attribute, $value, $fail) use ($transaction) {
+                if($transaction->status != TransactionStatus::Pending)
+                    $fail($attribute.' has already been defined.');
+                }
+            ]
         ];
     }
 }
